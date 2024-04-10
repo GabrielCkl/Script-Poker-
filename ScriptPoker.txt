@@ -1,0 +1,89 @@
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/7yhx/kwargs_Ui_Library/main/source.lua"))()
+
+local UI = Lib:Create{
+  Theme = "Dark", -- or any other theme
+  Size = UDim2.new(0, 555, 0, 400) -- default
+}
+
+local Main = UI:Tab{
+  Name = "Main"
+}
+
+local Divider = Main:Divider{
+  Name = "Inicio" -- Traduzido para português
+}
+
+local QuitDivider = Main:Divider{
+  Name = "Sair" -- Traduzido para português
+}
+
+local HandLabel = Main:Label{
+  Text = "Mão:",
+  Position = UDim2.new(0.05, 0, 0.05, 0),
+  Size = UDim2.new(0.2, 0, 0.1, 0),
+  Font = "Gotham",
+  TextSize = 14,
+  TextColor = Color3.new(1, 1, 1),
+  Alignment = "Left",
+}
+
+local HandValueLabel = Main:Label{
+  Text = "Valor da mão:",
+  Position = UDim2.new(0.05, 0, 0.2, 0),
+  Size = UDim2.new(0.2, 0, 0.1, 0),
+  Font = "Gotham",
+  TextSize = 14,
+  TextColor = Color3.new(1, 1, 1),
+  Alignment = "Left",
+}
+
+local HandTypeLabel = Main:Label{
+  Text = "Tipo da mão:",
+  Position = UDim2.new(0.05, 0, 0.35, 0),
+  Size = UDim2.new(0.2, 0, 0.1, 0),
+  Font = "Gotham",
+  TextSize = 14,
+  TextColor = Color3.new(1, 1, 1),
+  Alignment = "Left",
+}
+
+local DecisionLabel = Main:Label{
+  Text = "Decisão:",
+  Position = UDim2.new(0.05, 0, 0.5, 0),
+  Size = UDim2.new(0.2, 0, 0.1, 0),
+  Font = "Gotham",
+  TextSize = 14,
+  TextColor = Color3.new(1, 1, 1),
+  Alignment = "Left",
+}
+
+local FoldButton = Main:Button{
+  Text = "Desistir",
+  Position = UDim2.new(0.3, 0, 0.6, 0),
+  Size = UDim2.new(0.2, 0, 0.1, 0),
+  Font = "Gotham",
+  TextSize = 14,
+  TextColor = Color3.new(1, 1, 1),
+  BackgroundColor = Color3.new(0.5, 0.5, 0.5),
+  OnActivated = function()
+    -- Implementar a ação para desistir
+  end,
+}
+
+local CallButton = Main:Button{
+  Text = "Pagar",
+  Position = UDim2.new(0.5, 0, 0.6, 0),
+  Size = UDim2.new(0.2, 0, 0.1, 0),
+  Font = "Gotham",
+  TextSize = 14,
+  TextColor = Color3.new(1, 1, 1),
+  BackgroundColor = Color3.new(0.5, 0.5, 0.5),
+  OnActivated = function()
+    -- Implementar a ação para pagar
+  end,
+}
+
+local RaiseButton = Main:Button{
+  Text = "Aumentar",
+  Position = UDim2.new
+}
